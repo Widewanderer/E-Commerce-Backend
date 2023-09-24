@@ -47,14 +47,6 @@ Product.init(
     modelName: "product",
   }
 );
-// necessary? 
-// Establish the association between Category and Product
-Category.hasMany(Product, {
-  foreignKey: 'category_id',
-});
-Product.belongsTo(Category, {
-  foreignKey: 'category_id',
-});
 
 
 module.exports = {Product, Category};
