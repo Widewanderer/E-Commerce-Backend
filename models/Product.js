@@ -34,7 +34,7 @@ Product.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: "Category", // This references the Category model
+        model: "category", // This references the Category model
         key: "id", // This references the 'id' column in the Category model
       },
     },
@@ -48,4 +48,4 @@ Product.init(
   }
 );
 
-module.exports = { Product };
+module.exports = Product;
