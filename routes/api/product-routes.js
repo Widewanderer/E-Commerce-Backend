@@ -31,7 +31,7 @@ router.get("/:id", async (req, res) => {
       include: [{ model: Category }],
     });
     if (!productData) {
-      res.status(404).json({ message: "No catagory with that id found." });
+      res.status(404).json({ message: "No product with that id found." });
       return;
     }
     res.status(200).json(productData);
@@ -128,10 +128,10 @@ router.delete("/:id", async (req, res) => {
       },
     });
     if (!productData) {
-      res.status(404).json({ message: 'No category with that id found.' });
+      res.status(404).json({ message: 'No product with that id found.' });
       return;
     }
-    res.status(200).json({ message: 'Category deleted successfully' });
+    res.status(200).json({ message: 'Product deleted successfully' });
   } catch (err) {
     res.status(500).json(err);
   }

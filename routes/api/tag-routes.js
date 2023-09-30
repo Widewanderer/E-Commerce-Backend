@@ -29,7 +29,7 @@ router.get('/:id', async(req, res) => {
       include: [{ model: Product, through: ProductTag }],
     });
     if (!tagData) {
-      res.status(404).json({ message: "No catagory with that id found." });
+      res.status(404).json({ message: "No tag with that id found." });
       return;
     }
     res.status(200).json(tagData);
@@ -76,7 +76,7 @@ router.delete('/:id', async(req, res) => {
         id: req.params.id,
       },
     });
-    res.status(200).json({ message: 'Tag destroyed successfully' });
+    res.status(200).json({ message: 'Tag deleted successfully' });
   } catch (err) {
     res.status(500).json(err);
   }
