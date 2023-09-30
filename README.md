@@ -13,6 +13,7 @@ This project is licensed under the terms of the [MIT](https://opensource.org/lic
 Backend section of a modest E-Commerce website. Routes have implemented CRUD capabilities making it particularly suitable for managing inventory. Utilizes sequalize, mysql2, express, and dotenv. 
 
 Video
+https://drive.google.com/file/d/1Kq93iGKDk2J4b-qKnCCQHEybbE0rPf6V/view
 
 
 
@@ -38,7 +39,7 @@ Download project from GitHub. Use npm install for modules. Use Mysql to create s
 Tests of applications can be conducted using api rountes in applicaiton "Insomnia". 
 
 Video
-
+https://drive.google.com/file/d/1Kq93iGKDk2J4b-qKnCCQHEybbE0rPf6V/view
 
 
 ---
